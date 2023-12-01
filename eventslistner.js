@@ -42,7 +42,7 @@ const contract = new web3.eth.Contract(
 console.log('listening to events');
 
 
-// Define the event you want to listen, if you have large number of events, it would be better manage in somewhere like DB and read dynamically
+// Define the events you wish to listen to. If you have a large number of events, it would be better to manage them in a database and dynamically read them.
 const eventNames = ['RegisterUser', 'UpdateUser', 'RemoveUser', 'ContractUpdate'];
 
 // Subscribe to the event
@@ -54,6 +54,7 @@ const eventsubscribe = () => {
         console.log('event data:', event.returnValues);
 
         // Add custom logic to handle the event data here
+        
 
       })
       .on('error', (error) => {
