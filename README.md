@@ -1,4 +1,4 @@
-# BesuEventListner
+# Hyperledger Besu - Blockchain EventsListner
 This simple guide is useful if you want to learn how to set up event listeners from the blockchain.
 
 Recently, we configured the private Hyperledger Besu. As part of this setup, we developed an independent service to listen to all events and subsequently perform various actions, such as saving event timestamps on an off-chain database, among others.
